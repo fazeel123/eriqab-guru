@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:foreground="?android:attr/selectableItemBackground" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Alasan tuntutan ditolak"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorWarning">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="160dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En Ali Bakar"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asas Pendidikan Al-Quran"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Dec 2019 @ Baitul Ehsan"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:checked="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="80dp"
+                android:text="Pelatih"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="10dp"
+                android:layout_marginTop="-30dp" />
+
+            <RatingBar
+                android:id="@+id/ratingStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginStart="180dp"
+                android:backgroundTint="@color/colorGolden"
+                android:isIndicator="false"
+                android:progressTint="@color/colorGolden"
+                android:secondaryProgressTint="@android:color/transparent"
+                style="?android:attr/ratingBarStyleIndicator"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:checked="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="80dp"
+                android:text="Pelatih"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="10dp"
+                android:layout_marginTop="-30dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginStart="180dp"
+                android:backgroundTint="@color/colorGolden"
+                android:isIndicator="false"
+                android:progressTint="@color/colorGolden"
+                android:secondaryProgressTint="@android:color/transparent"
+                style="?android:attr/ratingBarStyleIndicator"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:checked="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="80dp"
+                android:text="Pelatih"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="10dp"
+                android:layout_marginTop="-30dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginStart="180dp"
+                android:backgroundTint="@color/colorGolden"
+                android:isIndicator="false"
+                android:progressTint="@color/colorGolden"
+                android:secondaryProgressTint="@android:color/transparent"
+                style="?android:attr/ratingBarStyleIndicator"/>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:checked="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="80dp"
+                android:text="Pelatih"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="10dp"
+                android:layout_marginTop="-30dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginStart="180dp"
+                android:backgroundTint="@color/colorGolden"
+                android:isIndicator="false"
+                android:progressTint="@color/colorGolden"
+                android:secondaryProgressTint="@android:color/transparent"
+                style="?android:attr/ratingBarStyleIndicator"/>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:checked="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="80dp"
+                android:text="Pelatih"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlack"
+                android:paddingRight="10dp"
+                android:layout_marginTop="-30dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="-110dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginStart="180dp"
+                android:backgroundTint="@color/colorGolden"
+                android:isIndicator="false"
+                android:progressTint="@color/colorGolden"
+                android:secondaryProgressTint="@android:color/transparent"
+                style="?android:attr/ratingBarStyleIndicator"/>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/selasai2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Selesai"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:elevation="2dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:paddingLeft="120dp"
+        android:paddingRight="100dp" />
+
+</RelativeLayout>

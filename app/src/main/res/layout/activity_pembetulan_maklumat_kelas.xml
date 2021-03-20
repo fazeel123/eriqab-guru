@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorWhite">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:foreground="?android:attr/selectableItemBackground" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Alasan tuntutan ditolak"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorWarning">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/place"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_border" />
+
+                <EditText
+                    android:id="@+id/datepicker"
+                    android:layout_width="180dp"
+                    android:focusableInTouchMode="false"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="Tarikh"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/round_border"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:id="@+id/timepickerstart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:padding="10dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="-45dp"
+                    android:hint="Masa"
+                    android:background="@drawable/round_border" />
+
+                <Spinner
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/baseline_expand_more_black"/>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Tajuk"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/round_border" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Alat Bantuan Mengajar"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/round_border" />
+
+                <EditText
+                    android:id="@+id/item"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:gravity="top|left"
+                    android:minLines="6"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Hasil Pembelajaran"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:background="@drawable/round_border" />
+
+                <ImageView
+                    android:id="@+id/camera_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="209dp"
+                    app:srcCompat="@drawable/baseline_camera_alt_black" />
+
+                <TextView
+                    android:id="@+id/camera_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginTop="-240dp"
+                    android:layout_marginRight="100dp"
+                    android:clickable="true"
+                    android:text="Ambil Punch Card"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/preview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/selasai"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hantar"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:elevation="2dp"
+                android:background="#4d80e4"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
